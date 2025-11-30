@@ -124,7 +124,7 @@ div[data-testid="column"] {
 div[data-testid="stAppViewContainer"] div[data-testid="stButton"] > button {
     margin: 0px;
     padding: 7px;
-    min-height: 50px;            /* Minimální výška tlačítka TEST */
+/*     min-height: 50px; */            /* Minimální výška tlačítka TEST */
     font-size: 18px;             /* Velikost fontu obsahu selectboxu v klidu */
     font-weight: bold;           /* Tučné písmo */
     background-color: #f0f8ff;
