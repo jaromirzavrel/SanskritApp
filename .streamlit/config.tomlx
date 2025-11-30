@@ -1,0 +1,53 @@
+# ===========================================
+# Streamlit – konfigurace pro lokální běh a distribuci
+# Soubor: .streamlit/config.toml
+# ===========================================
+
+[server]
+# Zakázat hlášení o aktualizacích
+headless = true
+enableWebsocketCompression = false
+
+# Povolit přístup z jiných zařízení v síti (např. 192.168.x.x)
+# address = "0.0.0.0"
+
+# Port, na kterém aplikace běží
+port = 8501
+
+# Povolit sdílení v rámci LAN, ale zachovat XSRF ochranu
+enableCORS = true
+enableXsrfProtection = true
+
+# automatický reload při úpravě kódu
+runOnSave = true
+
+
+# ===========================================
+# Uživatelské prostředí
+# ===========================================
+[browser]
+# Název v záložce prohlížeče
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[theme]
+base = "light"
+primaryColor = "#2c6e49"
+backgroundColor = "#f9f9f9"
+secondaryBackgroundColor = "#e7f1ea"
+textColor = "#000000"
+
+# base = "dark"
+# primaryColor = "#4a8af4"
+# backgroundColor = "#0e1117"
+# secondaryBackgroundColor = "#262730"
+# textColor = "#ffffff"
+
+font = "sans serif"
+
+# ===========================================
+# Vývoj – logování a chování
+# ===========================================
+[logger]
+level = "info"
+messageFormat = "%(asctime)s %(message)s"

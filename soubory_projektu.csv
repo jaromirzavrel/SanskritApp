@@ -1,0 +1,44 @@
+cesta;popis
+helpers/session_state_defaults.py;Inicializace session_state
+helpers/ui_layout.py;Hlavní layout UI
+helpers/utils.py;Pomocné funkce
+helpers/forms.py;Formuláře
+helpers/loader_csv.py;Nahrávání CSV dat
+helpers/sklonovani.py;Skloňování
+helpers/casovani.py;Časování
+helpers/transliterate.py;Transliterace
+helpers/generovani_sandhi_json.py;Vytvoření JSON pravidel sandhi
+helpers/sandhi_processor.py;Aplikace pravidel sandhi
+helpers/gramatika.py;Gramatika
+
+data/koncovky_pady_d.csv;Pádové koncovky D
+data/koncovky_pady_k.csv;Pádové koncovky K
+data/koncovky_pady_l.csv;Pádové koncovky L
+data/koncovky_casy_d.csv;Časy D
+data/koncovky_casy_k.csv;Časy K
+
+data/podstatna_jmena.csv;Podstatná jména
+data/pridavna_jmena.csv;Přídavná jména
+data/slovesa.csv;Slovesa
+
+data/zajmena_ja.csv;Zájmena Já 1. os.
+data/zajmena_ty.csv;Zájmena Ty 2. os.
+data/zajmena_on.csv;Zájmena On 3. os.
+data/zajmena_osobni.csv;Zájmena osobní
+data/zajmena_ukazovaci.csv;Zájmena ukazovací
+data/zajmena_tazaci.csv;Zájmena tázací
+data/zajmena_privlastnovaci.csv;Zájmena přivlastňovací
+data/zajmena_vztazna.csv;Zájmena vztažná
+data/zajmena_zvratna.csv;Zájmena zvratná
+data/zajmena_neurcita.csv;Zájmena neurčitá
+data/zajmena.csv;Všeobecná zájmena
+
+data/ostatni_slova.csv;Ostatní slova
+
+data/pravidla_sklonovani.csv;Pravidla skloňování
+data/pravidla_zajmena.csv;Pravidla zájmen
+data/pravidla_casovani.csv;Pravidla časování
+
+data/pad_rod_ciso_osoba_sans.csv;Číselník pád, rod, číslo, osoba, slovní druh, pada, aktivita
+
+style.css;Hlavní CSS styl aplikace

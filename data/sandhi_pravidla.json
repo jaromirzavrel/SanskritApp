@@ -1,0 +1,112 @@
+{
+  "skupiny": {
+    "samohlaska_bez_a":    [    "á","i","í","u","ú","é","ó","ṛ","ṝ","ḷ","ḹ","ai","au"],
+    "samohlaska_vse":      ["a","á","i","í","u","ú","é","ó","ṛ","ṝ","ḷ","ḹ","ai","au"],
+
+    "souhlaska_k_kh":        ["k","kh"],
+    "souhlaska_c_ch":        ["č","čh"],
+    "souhlaska_tt_tth":      ["ṭ","ṭh"],
+    "souhlaska_t_th":        ["t","th"],
+    "souhlaska_p_f":         ["p","ph","f"],
+
+    "souhlaska_neznela":     ["k","kh","č","čh","ṭ","ṭh","t","th","p","ph","f","ś","ṣ","s"],
+
+    "visarga_za_s_ne":       ["k","kh","p","ph","f","ś","ṣ","s"],
+    "visarga_za_s_ano":      ["č","čh","ṭ","ṭh","t","th","g","gh","ṅ","dž","džh","ñ","ň","ḍ","ḍh","ṇ","d","dh","n","b","bh","m","ṃ","ṁ","j","r","l","v","h","ḥ"],
+
+    "souhlaska_znela":       ["g","gh","ṅ","dž","džh","ñ","ň","ḍ","ḍh","ṇ","d","dh","n","b","bh","m","ṃ","ṁ","j","r","l","v","ś","ṣ","s","h","ḥ"],
+    "souhlaska_znela_a":     ["a","g","gh","ṅ","dž","džh","ñ","ň","ḍ","ḍh","ṇ","d","dh","n","b","bh","m","ṃ","ṁ","j","r","l","v","ś","ṣ","s","h","ḥ"],
+    "souhlaska_znela_bez_r": ["g","gh","ṅ","dž","džh","ñ","ň","ḍ","ḍh","ṇ","d","dh","n","b","bh","m","ṃ","ṁ","j","l","v","ś","ṣ","s","h","ḥ"],
+
+    "souhlaska_nos":         ["ṅ","ñ","ň","ṇ","n","m","ṃ","ṁ"],
+    "souhlaska_syk":         ["ś","ṣ","s"],
+
+    "souhlaska_vse":         ["k","kh","p","ph","f","č","čh","ṭ","ṭh","t","th","g","gh","ṅ","dž","džh","ñ","ň","ḍ","ḍh","ṇ","d","dh","n","b","bh","m","ṃ","ṁ","j","r","l","v","ś","ṣ","s","h","ḥ"],
+
+    "vse_bez_a":             ["á","i","í","u","ú","é","ó","ṛ","ṝ","ḷ","ḹ","ai","au","k","kh","p","ph","f","č","čh","ṭ","ṭh","t","th","g","gh","ṅ","dž","džh","ñ","ň","ḍ","ḍh","ṇ","d","dh","n","b","bh","m","ṃ","ṁ","j","r","l","v","ś","ṣ","s","h","ḥ"],
+
+    "samohlaska_bez_ah":     ["iḥ","éḥ","uḥ","óḥ"],
+    "samohlaska_bez_av":     ["ir","ér","ur","ór"],
+    "samohlaska_bez_ac":     ["-iś","-éś","-uś","-óś"],
+    "samohlaska_bez_at":     ["-is","-és","-us","-ós"],
+    "samohlaska_bez_ar":     ["-í","-é","-ú","-ó"]
+  },
+  "pravidla": [
+    { "typ": "visarga_ex", "konec": "saḥ",  "zacatek": "a-",          "nahrada_konec": "só",  "nahrada_zacatek": "+’-"},
+    { "typ": "visarga_ex", "konec": "éṣaḥ", "zacatek": "a-",          "nahrada_konec": "éṣó", "nahrada_zacatek": "+’-"},
+    { "typ": "visarga_ex", "konec": "saḥ",  "zacatek": "*vse_bez_a-", "nahrada_konec": "sa",  "nahrada_zacatek": "_-"},
+    { "typ": "visarga_ex", "konec": "éṣaḥ", "zacatek": "*vse_bez_a-", "nahrada_konec": "éṣa", "nahrada_zacatek": "_-"},
+
+    { "typ": "visarga_mekke", "konec": "punaḥ", "zacatek": "*visarga_za_s_ne-",  "nahrada_konec": "punaḥ", "nahrada_zacatek": "_-" },
+    { "typ": "visarga_mekke", "konec": "punaḥ", "zacatek": "r-",                 "nahrada_konec": "puná",  "nahrada_zacatek": "_-" },
+    { "typ": "visarga_mekke", "konec": "punaḥ", "zacatek": "*visarga_za_s_ano-", "nahrada_konec": "punar", "nahrada_zacatek": "+_-" },
+
+    { "typ": "visarga_a", "konec": "-aḥ", "zacatek": "a-",                 "nahrada_konec": "-ó",  "nahrada_zacatek": "+’-"},
+    { "typ": "visarga_a", "konec": "-aḥ", "zacatek": "*samohlaska_bez_a-", "nahrada_konec": "-a",  "nahrada_zacatek": "_-" },
+    { "typ": "visarga_a", "konec": "-aḥ", "zacatek": "*souhlaska_znela-",  "nahrada_konec": "-ó",  "nahrada_zacatek": "_-" },
+    { "typ": "visarga_a", "konec": "-aḥ", "zacatek": "*souhlaska_c_ch-",   "nahrada_konec": "-aś", "nahrada_zacatek": "+_-" },
+    { "typ": "visarga_a", "konec": "-aḥ", "zacatek": "*souhlaska_t_th-",   "nahrada_konec": "-as", "nahrada_zacatek": "+_-" },
+
+    { "typ": "visarga_dlouhe_a", "konec": "-áḥ", "zacatek": "*samohlaska_vse-",  "nahrada_konec": "-á",  "nahrada_zacatek": "_-" },
+    { "typ": "visarga_dlouhe_a", "konec": "-áḥ", "zacatek": "*souhlaska_znela-", "nahrada_konec": "-á",  "nahrada_zacatek": "_-" },
+    { "typ": "visarga_dlouhe_a", "konec": "-áḥ", "zacatek": "*souhlaska_c_ch-",  "nahrada_konec": "-áś", "nahrada_zacatek": "+_-" },
+    { "typ": "visarga_dlouhe_a", "konec": "-áḥ", "zacatek": "*souhlaska_t_th-",  "nahrada_konec": "-ás", "nahrada_zacatek": "+_-" },
+
+    { "typ": "visarga_samohlaska_bez_a", "konec": ["-iḥ","-éḥ","-uḥ","-óḥ"], "zacatek": "*samohlaska_vse-",        "nahrada_konec": ["-ir","-ér","-ur","-ór"], "nahrada_zacatek": "+_-", "podminky": {"f_dej_index": [true]} },
+    { "typ": "visarga_samohlaska_bez_a", "konec": ["-iḥ","-éḥ","-uḥ","-óḥ"], "zacatek": "*souhlaska_c_ch-",        "nahrada_konec": ["-iś","-éś","-uś","-óś"], "nahrada_zacatek": "+_-", "podminky": {"f_dej_index": [true]} },
+    { "typ": "visarga_samohlaska_bez_a", "konec": ["-iḥ","-éḥ","-uḥ","-óḥ"], "zacatek": "*souhlaska_t_th-",        "nahrada_konec": ["-is","-és","-us","-ós"], "nahrada_zacatek": "+_-", "podminky": {"f_dej_index": [true]} },
+    { "typ": "visarga_samohlaska_bez_a", "konec": ["-iḥ","-éḥ","-uḥ","-óḥ"], "zacatek": "r-",                      "nahrada_konec": ["-í","-é","-ú","-ó"],     "nahrada_zacatek": "_-",  "podminky": {"f_dej_index": [true]} },
+    { "typ": "visarga_samohlaska_bez_a", "konec": ["-iḥ","-éḥ","-uḥ","-óḥ"], "zacatek": "ṛ-",                      "nahrada_konec": ["-ir","-ér","-ur","-ór"], "nahrada_zacatek": "+_-", "podminky": {"f_dej_index": [true]} },
+    { "typ": "visarga_samohlaska_bez_a", "konec": ["-iḥ","-éḥ","-uḥ","-óḥ"], "zacatek": "*souhlaska_znela_bez_r-", "nahrada_konec": ["-ir","-ér","-ur","-ór"], "nahrada_zacatek": "+_-", "podminky": {"f_dej_index": [true]} },
+
+    { "typ": "samohlaska", "konec": "-ai", "zacatek": "*samohlaska_vse-", "nahrada_konec": "á",  "nahrada_zacatek": "_-" },
+    { "typ": "samohlaska", "konec": "-au", "zacatek": "*samohlaska_vse-", "nahrada_konec": "áv", "nahrada_zacatek": "+_-" },
+
+    { "typ": "samohlaska", "konec": "-a", "zacatek": "a-", "nahrada_konec": "á",  "nahrada_zacatek": "+x-" },
+    { "typ": "samohlaska", "konec": "-a", "zacatek": "i-", "nahrada_konec": "é",  "nahrada_zacatek": "+x-" },
+    { "typ": "samohlaska", "konec": "-a", "zacatek": "u-", "nahrada_konec": "ó",  "nahrada_zacatek": "+x-" },
+    { "typ": "samohlaska", "konec": "-a", "zacatek": "é-", "nahrada_konec": "ai", "nahrada_zacatek": "+x-" },
+    { "typ": "samohlaska", "konec": "-a", "zacatek": "ó-", "nahrada_konec": "au", "nahrada_zacatek": "+x-" },
+    { "typ": "samohlaska", "konec": "-a", "zacatek": "ṛ-", "nahrada_konec": "a",  "nahrada_zacatek": "+r-" },
+
+    { "typ": "samohlaska", "konec": "-i", "zacatek": "i-",                            "nahrada_konec": "í", "nahrada_zacatek": "+x-" },
+    { "typ": "samohlaska", "konec": "-i", "zacatek": ["a-","á-","u-","ú-","é-","ó-"], "nahrada_konec": "j", "nahrada_zacatek": "+_-" },
+
+    { "typ": "samohlaska", "konec": "-u", "zacatek": "u-",                  "nahrada_konec": "ú", "nahrada_zacatek": "+x-" },
+    { "typ": "samohlaska", "konec": "-u", "zacatek": ["a-","á-","i-","í-"], "nahrada_konec": "v", "nahrada_zacatek": "+_-" },
+
+    { "typ": "samohlaska", "konec": "-é", "zacatek": "a-",                  "nahrada_konec": "é", "nahrada_zacatek": "+’-"},
+    { "typ": "samohlaska", "konec": "-é", "zacatek": "*samohlaska_bez_a-",  "nahrada_konec": "a", "nahrada_zacatek": "_-", "podminky": {"cislo": ["!du."], "pad": ["!V"]} },
+
+    { "typ": "souhlaska", "konec": "-*samohlaska_vse", "zacatek": "čh-",    "nahrada_konec": "_", "nahrada_zacatek": "ččh-" },
+    { "typ": "anusvara",  "konec": "-ṃ", "zacatek": ["a-","á-","i-","í-","u-","ú-","é-","ó-"],    "nahrada_konec": "m", "nahrada_zacatek": "+_-" },
+
+    { "typ": "souhlaska", "konec": "-k", "zacatek": "a-",                "nahrada_konec": "g", "nahrada_zacatek": "+_-" },
+    { "typ": "souhlaska", "konec": "-k", "zacatek": "*souhlaska_znela-", "nahrada_konec": "g", "nahrada_zacatek": "+_-" },
+    { "typ": "souhlaska", "konec": "-ṭ", "zacatek": "*samohlaska_vse-",  "nahrada_konec": "ḍ", "nahrada_zacatek": "+_-" },
+    { "typ": "souhlaska", "konec": "-t", "zacatek": "*samohlaska_vse-",  "nahrada_konec": "d", "nahrada_zacatek": "+_-" },
+    { "typ": "souhlaska", "konec": "-ṭ", "zacatek": "*souhlaska_znela-", "nahrada_konec": "ḍ", "nahrada_zacatek": "+_-" },
+    { "typ": "souhlaska", "konec": "-t", "zacatek": "*souhlaska_znela-", "nahrada_konec": "d", "nahrada_zacatek": "+_-" },
+
+    { "typ": "souhlaska", "konec": "-p", "zacatek": "a-", "nahrada_konec": ["b","p"], "nahrada_zacatek": "+_-", "poznamka": "p po znělé souhlásce → b, jinak p", "podminky": {"f_dej_index": [true]} },
+    { "typ": "souhlaska", "konec": "-n", "zacatek": "a-", "nahrada_konec": "nn",      "nahrada_zacatek": "+_-" },
+
+    { "typ": "souhlaska", "konec": "-ṭ", "zacatek": "č-", "nahrada_konec": "č", "nahrada_zacatek": "+_-" },
+    { "typ": "souhlaska", "konec": "-t", "zacatek": "č-", "nahrada_konec": "č", "nahrada_zacatek": "+_-" },
+
+    { "typ": "souhlaska", "konec": "-ṭ", "zacatek": "dž-", "nahrada_konec": "dž", "nahrada_zacatek": "+_-" },
+    { "typ": "souhlaska", "konec": "-t", "zacatek": "dž-", "nahrada_konec": "dž", "nahrada_zacatek": "+_-" },
+
+    { "typ": "souhlaska", "konec": "-ṭ", "zacatek": "l-", "nahrada_konec": "l", "nahrada_zacatek": "+_-" },
+    { "typ": "souhlaska", "konec": "-t", "zacatek": "l-", "nahrada_konec": "l", "nahrada_zacatek": "+_-" },
+
+    { "typ": "souhlaska", "konec": "-ṭ", "zacatek": "*souhlaska_nos-", "nahrada_konec": ["d","n"], "nahrada_zacatek": "+_-", "podminky": {"f_dej_index": [true]} },
+    { "typ": "souhlaska", "konec": "-t", "zacatek": "*souhlaska_nos-", "nahrada_konec": ["d","n"], "nahrada_zacatek": "+_-", "podminky": {"f_dej_index": [true]} },
+
+    { "typ": "souhlaska", "konec": "-ṭ", "zacatek": "ś-", "nahrada_konec": "č", "nahrada_zacatek": "+čh-" },
+    { "typ": "souhlaska", "konec": "-t", "zacatek": "ś-", "nahrada_konec": "č", "nahrada_zacatek": "+čh-" },
+
+    { "typ": "souhlaska", "konec": "-ṭ", "zacatek": "h-", "nahrada_konec": "d", "nahrada_zacatek": "+dh-" },
+    { "typ": "souhlaska", "konec": "-t", "zacatek": "h-", "nahrada_konec": "d", "nahrada_zacatek": "+dh-" }
+  ]
+}

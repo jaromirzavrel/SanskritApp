@@ -1,0 +1,19 @@
+id;pád;pád_číslo;číslo;osoba;devanagari;iast;cz
+1;Nominativ;1;sg;1;अहम्;aham;já
+2;Akuzativ;2;sg;1;माम्;mām;mne
+3;Instrumentál;3;sg;1;मया;mayā;mnou
+4;Dativ;4;sg;1;मह्यम्;mahyam;mi
+5;Ablativ;5;sg;1;मत्;mat;ode mne
+6;Genitiv;6;sg;1;मम;mama;moje
+7;Lokativ;7;sg;1;मयि;mayi;ve mně
+8;Nominativ;1;du;1;आवाम्;āvām;my dva
+9;Akuzativ;2;du;1;आवाम्;āvām;nás dva
+10;Instrumentál;3;du;1;आवाभ्याम्;āvābhyām;námi dvěma
+11;Dativ;4;du;1;आवाभ्याम्;āvābhyām;nám dvěma
+12;Genitiv;6;du;1;आवयोः;āvayoḥ;našich (dvou)
+13;Nominativ;1;pl;1;वयम्;vayam;my
+14;Akuzativ;2;pl;1;अस्मान्;asmān;nás
+15;Instrumentál;3;pl;1;अस्माभिः;asmābhiḥ;námi
+16;Dativ;4;pl;1;अस्मभ्यम्;asmabhyam;nám
+17;Genitiv;6;pl;1;अस्माकम्;asmākam;naše
+18;Lokativ;7;pl;1;अस्मासु;asmāsu;v nás

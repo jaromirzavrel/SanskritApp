@@ -1,0 +1,25 @@
+poradi;lakara;cas_l;cas_cz;pada;aktivita;koncovky;priklad
+1;laṭ;prezent;přítomný čas;parasmai;aktivum;ti/anti;karóti – „dělá“
+2;laṭ;prezent;přítomný čas;átmané;médium;té/anté;kuruté – „dělá (pro sebe)“
+3;laṅ;imperfekt;jednoduchý minulý čas;parasmai;aktivum;at/an;akarót – „dělal“
+4;laṅ;imperfekt;jednoduchý minulý čas;átmané;médium;ta/anta;akurut – „dělal (pro sebe)“
+5;liṭ;perfekt;dokonavý minulý čas;parasmai;aktivum;á/iré;čakára – „učinil“
+6;liṭ;perfekt;dokonavý minulý čas;átmané;médium;é/iré;čakré – „učinil (pro sebe)“
+7;luṅ;aorist;nedokonavý minulý čas;parasmai;aktivum;t/am;akárṣít – „učinil náhle“
+8;luṅ;aorist;nedokonavý minulý čas;átmané;médium;ta/anta;akṛta – „byl učiněn“
+9;lṛṭ;futurum I;budoucí čas (běžný);parasmai;aktivum;sjati/sjanti;kariṣyati – „bude dělat“
+10;lṛṭ;futurum I;budoucí čas (běžný);átmané;médium;sjaté/sjanté;kariṣjaté – „bude dělat (pro sebe)“
+11;luṭ;futurum II;perifrastické budoucí;parasmai;aktivum;itá/itar;karitá – „on udělá“
+12;luṭ;futurum II;perifrastické budoucí;átmané;médium;itá/itar;karitá – „on udělá (pro sebe)“
+13;lóṭ;imperativ;rozkaz;parasmai;aktivum;tu/táni;karotu – „ať dělá!“
+14;lóṭ;imperativ;rozkaz;átmané;médiumtām/antám;kurutám – „ať dělá (pro sebe)“
+15;lṛṅ;optativ;přací/podmínkový;parasmai;aktivum;jét/jus;kurját – „kéž dělá“
+16;lṛṅ;optativ;přací/podmínkový;átmané;médium;íta/íran;kurjátám – „kéž dělá (pro sebe)“
+17;liṅ;gerundivum;příčestí budoucí (nutnost);–;-;tavja/ja;kartavja – „určený k dělání“
+18;infinitiv;infinitiv;neurčitý tvar;–;-;tum;tum (kartuṁ – „dělat“)
+19;gerundium;absolutiv;předčasnost;–;-;tvā/ja;kṛtvá – „udělavši“
+20;PPP;participium;příčestí minulé trpné pasiv;-;–;ta/na;kṛta – „udělaný“
+21;PMA;participium;příčestí minulé činné aktiv;-;-;-vat / -us;gatavat – „ten, kdo šel“
+22;PPA;participium;příčestí přítomné činné aktiv;–;-;ant;kurvan – „konající“
+23;FPP;participium;příčestí budoucí (účelové) aktiv;–;-;tavja/ja;kartavja – „k udělání“
+24;deverbativum;substantivum dějové;dějové podst. jm.;–;-;ana/ti;kartanam – „sekání“

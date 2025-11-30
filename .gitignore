@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.log
+
+# Streamlit
+# .streamlit/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Soubory systému
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Lokální spouštěcí soubory
+spustit_appku.bat
+Gen_Slovnik_Popis_Komunikace.txt
+test_appka.bat
+
+# Projektové dokumentace
+# README.md
+# README.txt
+pyproject.toml
+
+# CSV / data / výstupy
+# Nutná data pro aplikaci necháme v repo
+*.ods
+*.odt
+*.xlsx
+
+# Sandhi výstupy nebo zálohy
+*.bak
+*.tmp
+data/indexy_abecedni/
+odlozeno/
+pom/
+
+# Ostatní složky s daty, které nejsou nutné pro Cloud
+help/
+navod/
+test/
+
+# Virtuální prostředí (pokud máš)
+env/
+venv/
+.venv/

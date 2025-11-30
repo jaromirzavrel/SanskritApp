@@ -1,0 +1,73 @@
+pad;rod;cislo;koncovka;pad_san;pad_cz;otazka;vyznam;clen;sl_druh
+N;m;sg.;aḥ;1;1;kdo, co;;podmět;
+N;m;du.;au;1;1;kdo, co;;podmět;
+N;m;pl.;áḥ;1;1;kdo, co;;podmět;
+N;n;sg.;aṃ;1;1;kdo, co;;podmět;
+N;n;du.;é;1;1;kdo, co;;podmět;
+N;n;pl.;áni;1;1;kdo, co;;podmět;
+N;f;sg.;á;1;1;kdo, co;;podmět;
+N;f;du.;é;1;1;kdo, co;;podmět;
+N;f;pl.;áḥ;1;1;kdo, co;;podmět;
+Ak;m;sg.;aṃ;2;4;koho, co;směr, cíl;předmět;příslovce
+Ak;m;du.;au;2;4;koho, co;směr, cíl;předmět;příslovce
+Ak;m;pl.;án;2;4;koho, co;směr, cíl;předmět;příslovce
+Ak;n;sg.;aṃ;2;4;koho, co;směr, cíl;předmět;příslovce
+Ak;n;du.;é;2;4;koho, co;směr, cíl;předmět;příslovce
+Ak;n;pl.;áni;2;4;koho, co;směr, cíl;předmět;příslovce
+Ak;f;sg.;áṃ;2;4;koho, co;směr, cíl;předmět;příslovce
+Ak;f;du.;é;2;4;koho, co;směr, cíl;předmět;příslovce
+Ak;f;pl.;áḥ;2;4;koho, co;směr, cíl;předmět;příslovce
+I;m;sg.;éna;3;7;(s) kým, čím;;prostředek, nástroj;příslovce
+I;m;du.;ábhjáṃ;3;7;(s) kým, čím;;prostředek, nástroj;příslovce
+I;m;pl.;aiḥ;3;7;(s) kým, čím;;prostředek, nástroj;příslovce
+I;n;sg.;éna;3;7;(s) kým, čím;;prostředek, nástroj;příslovce
+I;n;du.;ábhjáṃ;3;7;(s) kým, čím;;prostředek, nástroj;příslovce
+I;n;pl.;aiḥ;3;7;(s) kým, čím;;prostředek, nástroj;příslovce
+I;f;sg.;ajá;3;7;(s) kým, čím;;prostředek, nástroj;příslovce
+I;f;du.;ábhjáṃ;3;7;(s) kým, čím;;prostředek, nástroj;příslovce
+I;f;pl.;ábhiḥ;3;7;(s) kým, čím;;prostředek, nástroj;příslovce
+D;m;sg.;ája;4;3;(ke) komu, čemu;;účel;
+D;m;du.;ábhjáṃ;4;3;(ke) komu, čemu;;účel;
+D;m;pl.;ébhjaḥ;4;3;(ke) komu, čemu;;účel;
+D;n;sg.;ája;4;3;(ke) komu, čemu;;účel;
+D;n;du.;ábhjáṃ;4;3;(ke) komu, čemu;;účel;
+D;n;pl.;ébhjaḥ;4;3;(ke) komu, čemu;;účel;
+D;f;sg.;ájai;4;3;(ke) komu, čemu;;účel;
+D;f;du.;ábhjáṃ;4;3;(ke) komu, čemu;;účel;
+D;f;pl.;ábhjaḥ;4;3;(ke) komu, čemu;;účel;
+Abl;m;sg.;át;5;;(od) koho, čeho;odkud;příčina;
+Abl;m;du.;ábhjáṃ;5;;(od) koho, čeho;odkud;příčina;
+Abl;m;pl.;ébhjaḥ;5;;(od) koho, čeho;odkud;příčina;
+Abl;n;sg.;át;5;;(od) koho, čeho;odkud;příčina;
+Abl;n;du.;ábhjáṃ;5;;(od) koho, čeho;odkud;příčina;
+Abl;n;pl.;ébhjaḥ;5;;(od) koho, čeho;odkud;příčina;
+Abl;f;sg.;ájáḥ;5;;(od) koho, čeho;odkud;příčina;
+Abl;f;du.;ábhjáṃ;5;;(od) koho, čeho;odkud;příčina;
+Abl;f;pl.;ábhjaḥ;5;;(od) koho, čeho;odkud;příčina;
+G;m;sg.;asja;6;2;(bez) koho, čeho;čí;;
+G;m;du.;ajóḥ;6;2;(bez) koho, čeho;čí;;
+G;m;pl.;ánáṃ;6;2;(bez) koho, čeho;čí;;
+G;n;sg.;asja;6;2;(bez) koho, čeho;čí;;
+G;n;du.;ajóḥ;6;2;(bez) koho, čeho;čí;;
+G;n;pl.;ánáṃ;6;2;(bez) koho, čeho;čí;;
+G;f;sg.;ájáḥ;6;2;(bez) koho, čeho;čí;;
+G;f;du.;ajóḥ;6;2;(bez) koho, čeho;čí;;
+G;f;pl.;ánáṃ;6;2;(bez) koho, čeho;čí;;
+L;m;sg.;é;7;6;(v/na/o) kom, čem;(u) koho, čeho;;
+L;m;du.;ajóḥ;7;6;(v/na/o) kom, čem;(u) koho, čeho;;
+L;m;pl.;éṣu;7;6;(v/na/o) kom, čem;(u) koho, čeho;;
+L;n;sg.;é;7;6;(v/na/o) kom, čem;(u) koho, čeho;;
+L;n;du.;ajóḥ;7;6;(v/na/o) kom, čem;(u) koho, čeho;;
+L;n;pl.;éṣu;7;6;(v/na/o) kom, čem;(u) koho, čeho;;
+L;f;sg.;ájáṃ;7;6;(v/na/o) kom, čem;(u) koho, čeho;;
+L;f;du.;ajóḥ;7;6;(v/na/o) kom, čem;(u) koho, čeho;;
+L;f;pl.;ásu;7;6;(v/na/o) kom, čem;(u) koho, čeho;;
+V;m;sg.;a;8;5;oslovení;zvolání;;
+V;m;du.;au;8;5;oslovení;zvolání;;
+V;m;pl.;áḥ;8;5;oslovení;zvolání;;
+V;n;sg.;aṃ;8;5;oslovení;zvolání;;
+V;n;du.;é;8;5;oslovení;zvolání;;
+V;n;pl.;áni;8;5;oslovení;zvolání;;
+V;f;sg.;é;8;5;oslovení;zvolání;;
+V;f;du.;é;8;5;oslovení;zvolání;;
+V;f;pl.;áḥ;8;5;oslovení;zvolání;;

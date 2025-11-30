@@ -1,0 +1,32 @@
+id;pád;pád_číslo;číslo;rod;devanagari;iast;cz
+1;Nominativ;1;sg;m;कः;kaḥ;kdo? (on)
+2;Nominativ;1;sg;f;का;kā;kdo? (ona)
+3;Nominativ;1;sg;n;किं;kiṃ;co? (ono)
+4;Akuzativ;2;sg;m;कम्;kam;koho?
+5;Akuzativ;2;sg;f;कां;kāṃ;koho?
+6;Akuzativ;2;sg;n;किं;kiṃ;co?
+7;Instrumentál;3;sg;m;केन;kena;kým?
+8;Instrumentál;3;sg;f;कया;kayā;kým?
+9;Instrumentál;3;sg;n;केन;kena;čím?
+10;Dativ;4;sg;m;कस्मै;kasmai;komu?
+11;Dativ;4;sg;f;कस्यै;kasyai;komu?
+12;Dativ;4;sg;n;कस्मै;kasmai;čemu?
+13;Ablativ;5;sg;m;कस्मात्;kasmāt;od koho?
+14;Ablativ;5;sg;f;कस्याः;kasyāḥ;od koho?
+15;Ablativ;5;sg;n;कस्मात्;kasmāt;od čeho?
+16;Genitiv;6;sg;m;कस्य;kasya;koho?
+17;Genitiv;6;sg;f;कस्याः;kasyāḥ;koho?
+18;Genitiv;6;sg;n;कस्य;kasya;čeho?
+19;Lokativ;7;sg;m;कस्मिन्;kasmin;v kom?
+20;Lokativ;7;sg;f;कस्याम्;kasyām;v kom?
+21;Lokativ;7;sg;n;कस्मिन्;kasmin;v čem?
+22;Nominativ;1;du;m;कौ;kau;kdo dva?
+23;Nominativ;1;du;f;के;ke;kdo dvě?
+24;Nominativ;1;du;n;के;ke;co dvě?
+25;Nominativ;1;pl;m;के;ke;kdo (muži)?
+26;Nominativ;1;pl;f;काः;kāḥ;kdo (ženy)?
+27;Nominativ;1;pl;n;कानि;kāni;co (věci)?
+28;Akuzativ;2;pl;m;कान्;kān;koho?
+29;Akuzativ;2;pl;f;काः;kāḥ;koho?
+30;Akuzativ;2;pl;n;कानि;kāni;co?
+... (lze pokračovat až do 72, nebo generovat z přehledu)

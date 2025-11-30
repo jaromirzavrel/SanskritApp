@@ -1,0 +1,25 @@
+poradi;lakara;cas_l;cas_cz;pada;aktivita;poznamka
+1;laṭ;prezent;přítomný čas;parasmai;aktivum;
+2;laṭ;prezent;přítomný čas;átmané;médium;
+3;luṅ;aorist;jednoduchý minulý (minulý dokonavý);parasmai;aktivum;
+4;luṅ;aorist;jednoduchý minulý (minulý dokonavý);átmané;médium;
+5;laṅ;imperfekt;minulý čas (dějový, vyprávěcí);parasmai;aktivum;
+6;laṅ;imperfekt;minulý čas (dějový, vyprávěcí);átmané;médium;
+7;liṭ;perfekt;dokonavý minulý;parasmai;aktivum;
+8;liṭ;perfekt;dokonavý minulý;átmané;médium;
+9;luṭ;futurum I;budoucí (formální/kněžský);parasmai;aktivum;
+10;luṭ;futurum I;budoucí (formální/kněžský);átmané;médium;
+11;lṛṭ;futurum II;budoucí (běžné, jednoduché);parasmai;aktivum;
+12;lṛṭ;futurum II;budoucí (běžné, jednoduché);átmané;médium;
+13;lṛṅ;optativ;přací/podmiňovací způsob (mohl by...);parasmai;aktivum;
+14;lṛṅ;optativ;přací/podmiňovací způsob (mohl by...);átmané;médium;
+15;lóṭ;imperativ přítomný;rozkazovací způsob (přítomný/přímý);parasmai;aktivum;
+16;lóṭ;imperativ přítomný;rozkazovací způsob (přítomný/přímý);átmané;médium;
+17;lúṭ;imperativ budoucí;silný příkaz s budoucím významem;parasmai;aktivum;
+18;lúṭ;imperativ budoucí;silný příkaz s budoucím významem;átmané;médium;
+19;léṭ;optativ budoucí;přací budoucí (védský, archaický);parasmai;aktivum;
+20;léṭ;optativ budoucí;přací budoucí (védský, archaický);átmané;médium;
+21;participium;PPP;příčestí minulé trpné pasiv;;pasivum;past passive participle (příčestí minulé trpné), používá se jako Adjectivum - Přídavné jméno
+22;participium;PMA;příčestí minulé činné aktiv;;aktivum;past participle active (příčestí minulé činné)
+23;participium;PPA;příčestí přítomné činné aktiv;;aktivum;present participle active (příčestí přítomné činné)
+24;participium;FPP;příčestí budoucí (účelové) aktiv;;aktivum;future participle active (příčestí budoucí účelové)

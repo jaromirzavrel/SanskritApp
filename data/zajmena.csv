@@ -1,0 +1,37 @@
+cz;transliterace;devanagari;osoba;rod;cislo;pad;variant;pozice;funkce;poznamka
+
+já;aham;अहम्;1;;sg;N;základní;libovolná;neutrální;hlavní podmět, na začátku
+mě;mám;माम्;1;;sg;Ak;dlouhý;libovolná;zdůrazněný předmět;v poezii běžnější než "má"
+mě;má;मा;1;;sg;Ak;krátký;uvnitř věty;neutrální;příklonka
+mnou;majá;मया;1;;sg;I;základní;libovolná;instrumentál;často ve větách typu "majá kṛtam"
+mi;mahjaṃ;मह्यम्;1;;sg;D;dativní;libovolná;komu;mahjaṃ déváḥ dadati
+můj;mam;मम;1;;sg;G;základní;libovolná;genitiv;můj přítel – mama mitram
+ve mně;maji;मयि;1;;sg;L;lokativní;libovolná;v místě;maji džñánam asti
+
+ty;tvam;त्वम्;2;;sg;N;základní;libovolná;neutrální;hlavní podmět
+tebe;tvám;त्वाम्;2;;sg;Ak;důraz;libovolná;objekt;předmět slovesa
+tebou;tvajá;त्वया;2;;sg;I;základní;libovolná;instrumentál;tvajá kṛtam
+tobě;tubhjam;तुभ्यम्;2;;sg;D;dativní;libovolná;komu;tubhjam dadámi
+tvůj;tava;तव;2;;sg;G;genitivní;libovolná;přivlastnění;tava mitram
+v tobě;tvaji;त्वयि;2;;sg;L;lokativní;libovolná;lokace;tvaji viśvásaḥ asti
+
+on;saḥ;सः;3;m;sg;N;základní;na začátku;podmět;nejběžnější 3.os.m.sg.
+ona;sá;सा;3;f;sg;N;základní;na začátku;podmět;3.os.f.sg.
+ono;tat;तत्;3;n;sg;N;základní;na začátku;podmět;neutrum
+jeho;tam;तम्;3;m;sg;Ak;běžný;libovolná;předmět;vidím jeho – tam paśjámi
+její;tám;ताम्;3;f;sg;Ak;akuzativ;libovolná;ona jako objekt;
+jejich;tán;तान्;3;m;pl;Ak;akuzativ;libovolná;předmět;tán vadati
+
+tento;ajam;अयम्;3;m;sg;N;ukazovací;na začátku;ukázání;ten zde
+tato;ijam;इयम्;3;f;sg;N;ukazovací;na začátku;ukázání;ta zde
+toto;idam;इदम्;3;n;sg;N;ukazovací;na začátku;ukázání;to zde
+
+my;vajam;वयम्;1;;pl;N;základní;libovolná;1. os. pl.;my konáme
+nás;asmán;अस्मान्;1;;pl;Ak;předmět;libovolná;;asmat paśjati
+námi;asmábhiḥ;अस्माभिः;1;;pl;I;instrumentál;libovolná;spolu s námi;
+nám;asmabhjam;अस्मभ्यम्;1;;pl;D;dativ;libovolná;dávají nám;
+
+vy;jújam;यूयम्;2;;pl;N;základní;libovolná;2. os. pl.;vy mluvíte
+vás;juṣmán;युष्मान्;2;;pl;Ak;předmět;libovolná;;paśjati juṣmán
+vámi;juṣmábhiḥ;युष्माभिः;2;;pl;I;instrumentál;libovolná;vámi vykonáno;
+vám;juṣmabhjam;युष्मभ्यम्;2;;pl;D;dativ;libovolná;pro vás;
