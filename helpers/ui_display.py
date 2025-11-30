@@ -257,9 +257,11 @@ def zobraz_vetu(kdo_vola: str = "neznámý"):
             vety_df,
             column_config={
                 "Varianta": st.column_config.Column(
-                    f"Varianta - {kdo_vola}", width="auto"  # pixely
+                    f"Varianta - {kdo_vola}", width=None  # pixely auto
                 ),
-                "Věta": st.column_config.Column("Věta", width="large"),  # malé, medium, large, auto
+                "Věta": st.column_config.Column(
+                    "Věta", width=None
+                ),  # malé, medium, large 400, auto
             },
             hide_index=True,
             # use_container_width=True,

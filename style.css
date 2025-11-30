@@ -52,7 +52,26 @@ code {
 [data-testid="stSidebar"] > div:first-child {
     width: 100%;  /* Šířka vnitřního obsahu */
 }
-        
+
+/* Hlavička */
+header.stAppHeader {
+    height: 32px !important;        /* nebo nižší */
+    min-height: 32px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+header.stAppHeader div[data-testid="stToolbar"] {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+header.stAppHeader button[kind="header"],
+header.stAppHeader button[kind="headerNoPadding"] {
+    transform: scale(0.8);          /* zmenší tlačítka */
+}
+/* Konec Hlavička */
+
 [data-baseweb="radio"] {
     margin-top: -15px; /* Vzdálenost řádku voleb od řádku label */
 }
@@ -61,7 +80,7 @@ div[role="radiogroup"] label {
     display: flex;
     font-size: 20px;
     font-weight: bold;
-    margin-top: -20px; /* Vzdálenost řádku voleb od řádku label */
+    margin-top: -20px; /* Vzdálenost řádku voleb od řádku label -20 */
     margin-right: 0px;
     padding: 0px 13px 1px 0px; /* Vnitřní odsazení, vzdálenost prvků řádku voleb */
     background-color: #e0f7fa;
@@ -105,6 +124,7 @@ div[data-testid="column"] {
 div[data-testid="stAppViewContainer"] div[data-testid="stButton"] > button {
     margin: 0px;
     padding: 7px;
+    min-height: 50px;            /* Minimální výška tlačítka TEST */
     font-size: 18px;             /* Velikost fontu obsahu selectboxu v klidu */
     font-weight: bold;           /* Tučné písmo */
     background-color: #f0f8ff;
