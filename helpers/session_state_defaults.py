@@ -407,7 +407,7 @@ def init_session_state_on_startup():
         # formát výpisu
         "f_bez_tlacitek": False,
         # konfigurace aplikace - auto sandhi po sestavení věty - vpravo 2.
-        "f_auto_sandhi": True,
+        "f_auto_sandhi": True,  # noqa: F601
         # -------------------------------------------------
         # Ladění a Debug - DEFAULT
         # pomůcka při návrhu rozměrů sloupců
@@ -426,7 +426,7 @@ def init_session_state_on_startup():
         # POM SEKCE pro nastavení dočasných hodnot
         # Nastvení aplikace
         # konfigurace aplikace - auto sandhi po sestavení věty - vpravo 2.
-        "f_auto_sandhi": True,
+        "f_auto_sandhi": False,
         # -------------------------------------------------
         # Ladění a Debug
         # pomůcka při návrhu rozměrů sloupců

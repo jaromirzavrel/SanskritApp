@@ -1,0 +1,926 @@
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_ex<
+          pravidlo_konec                    >saḥ<
+          pravidlo_nahrada_konec            >só<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_ex<
+          pravidlo_konec                    >éṣaḥ<
+          pravidlo_nahrada_konec            >éṣó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_ex<
+          pravidlo_konec                    >saḥ<
+          pravidlo_nahrada_konec            >sa<
+          pravidlo_zacatek                  >*vse_bez_a-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_ex<
+          pravidlo_konec                    >éṣaḥ<
+          pravidlo_nahrada_konec            >éṣa<
+          pravidlo_zacatek                  >*vse_bez_a-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_mekke<
+          pravidlo_konec                    >punaḥ<
+          pravidlo_nahrada_konec            >punaḥ<
+          pravidlo_zacatek                  >*visarga_za_s_ne-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_mekke<
+          pravidlo_konec                    >punaḥ<
+          pravidlo_nahrada_konec            >puná<
+          pravidlo_zacatek                  >r-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_mekke<
+          pravidlo_konec                    >punaḥ<
+          pravidlo_nahrada_konec            >punar<
+          pravidlo_zacatek                  >*visarga_za_s_ano-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Nalezen konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec_nahrada:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_ex<
+          pravidlo_konec                    >saḥ<
+          pravidlo_nahrada_konec            >só<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_ex<
+          pravidlo_konec                    >éṣaḥ<
+          pravidlo_nahrada_konec            >éṣó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_ex<
+          pravidlo_konec                    >saḥ<
+          pravidlo_nahrada_konec            >sa<
+          pravidlo_zacatek                  >*vse_bez_a-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_ex<
+          pravidlo_konec                    >éṣaḥ<
+          pravidlo_nahrada_konec            >éṣa<
+          pravidlo_zacatek                  >*vse_bez_a-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_mekke<
+          pravidlo_konec                    >punaḥ<
+          pravidlo_nahrada_konec            >punaḥ<
+          pravidlo_zacatek                  >*visarga_za_s_ne-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_mekke<
+          pravidlo_konec                    >punaḥ<
+          pravidlo_nahrada_konec            >puná<
+          pravidlo_zacatek                  >r-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >2<
+          index_out_konci_na                >7<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >False<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_mekke<
+          pravidlo_konec                    >punaḥ<
+          pravidlo_nahrada_konec            >punar<
+          pravidlo_zacatek                  >*visarga_za_s_ano-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Nalezen konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >False<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec_nahrada:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >0<
+          index_out_zpracuj_zacatek         >0<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Nenalezen začátek:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >7<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_zacatek:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >7<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >a-<
+          pravidlo_nahrada_zacatek          >+’-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Nalezen konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >7<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-a<
+          pravidlo_zacatek                  >*samohlaska_bez_a-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >7<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-a<
+          pravidlo_zacatek                  >*samohlaska_bez_a-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec_nahrada:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >7<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-a<
+          pravidlo_zacatek                  >*samohlaska_bez_a-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Nenalezen začátek:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-a<
+          pravidlo_zacatek                  >*samohlaska_bez_a-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_zacatek:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-a<
+          pravidlo_zacatek                  >*samohlaska_bez_a-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Nalezen konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >*souhlaska_znela-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >*souhlaska_znela-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec_nahrada:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >*souhlaska_znela-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Nenalezen začátek:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >*souhlaska_znela-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_zacatek:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >True<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-ó<
+          pravidlo_zacatek                  >*souhlaska_znela-<
+          pravidlo_nahrada_zacatek          >_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Nalezen konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec:
+          index_out                         >4<
+          index_out_konci_na                >6<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_konec_nahrada:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >6<
+          index_out_zpracuj_zacatek         >2<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >False<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Nalezen začátek:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >5<
+          index_out_zpracuj_zacatek         >4<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >True<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_zacatek:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >5<
+          index_out_zpracuj_zacatek         >4<
+          index_out_zpracuj_zacatek_nahrada >0<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >True<
+          f_nalezeno_nahrada_zacatek        >False<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _zpracuj_zacatek_nahrada:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >5<
+          index_out_zpracuj_zacatek         >4<
+          index_out_zpracuj_zacatek_nahrada >4<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >True<
+          f_nalezeno_nahrada_zacatek        >True<
+          f_continue                        >False<
+          prvni                             >kumáraḥ<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Výsledek:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >5<
+          index_out_zpracuj_zacatek         >4<
+          index_out_zpracuj_zacatek_nahrada >4<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >True<
+          f_nalezeno_nahrada_zacatek        >True<
+          f_continue                        >False<
+          prvni                             >kumáraś<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po _nahrada_nahrada:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >5<
+          index_out_zpracuj_zacatek         >4<
+          index_out_zpracuj_zacatek_nahrada >4<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >True<
+          f_nalezeno_nahrada_zacatek        >True<
+          f_continue                        >False<
+          prvni                             >kumáraś<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Za slovem:
+          nove_druhe                  >ča<
+        
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >5<
+          index_out_zpracuj_zacatek         >4<
+          index_out_zpracuj_zacatek_nahrada >4<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >True<
+          f_nalezeno_nahrada_zacatek        >True<
+          f_continue                        >False<
+          prvni                             >kumáraś<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po zaver_1:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >5<
+          index_out_zpracuj_zacatek         >4<
+          index_out_zpracuj_zacatek_nahrada >4<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >True<
+          f_nalezeno_nahrada_zacatek        >True<
+          f_continue                        >False<
+          prvni                             >kumáraś<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        KONEC:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >5<
+          index_out_zpracuj_zacatek         >4<
+          index_out_zpracuj_zacatek_nahrada >4<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >True<
+          f_nalezeno_nahrada_zacatek        >True<
+          f_continue                        >False<
+          prvni                             >kumáraś<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        
+DEBUG:root:
+        Po zaver_2:
+          index_out                         >10<
+          index_out_konci_na                >4<
+          index_out_zacina_na               >5<
+          index_out_zpracuj_zacatek         >4<
+          index_out_zpracuj_zacatek_nahrada >4<
+          f_nalezeno_vzor_konec             >True<
+          f_nalezeno_nahrada_konec          >True<
+          f_nalezeno_vzor_zacatek           >True<
+          f_nalezeno_nahrada_zacatek        >True<
+          f_continue                        >False<
+          prvni                             >kumáraś<
+          druhe                             >ča<
+          pravidlo_typ                      >visarga_a<
+          pravidlo_konec                    >-aḥ<
+          pravidlo_nahrada_konec            >-aś<
+          pravidlo_zacatek                  >*souhlaska_c_ch-<
+          pravidlo_nahrada_zacatek          >+_-<
+          pravidlo_podminky                 ><
+        

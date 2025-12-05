@@ -285,6 +285,8 @@ def _akce_sandhi():
     # Když uživatel stiskne tlačítko pro aplikaci sandhi
     if ss.get("f_aplikuj_sandhi", False):
         if aplikuj_sandhi():  # utils (pokud provede sandhi tak i transliteraci)
+            st.sidebar.write("veta_tran_cz_sandhi", ss["veta_tran_cz_sandhi"])
+            # st.sidebar.write("Po sandhi:", ss.get('matice_vety'))
             zobraz_toast(text="📝 Sandhi aplikováno!", trvani=2.5)
         else:
             zobraz_toast(text="2. Matice věty je prázdná.", icon="⚠️", trvani=2.5)

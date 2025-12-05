@@ -507,9 +507,21 @@ def _form_typ() -> None:
         form.df_klice["key_cislo"], form.volby_cislo[0]
     )
     # [1, 2, 3] int
+    # st.write(f"value_osoba >{(form.slovo_k_editaci or {}).get(form.df_klice['key_osoba'], form.volby_osoba[2])}<")
+
+    # st.write("DEBUG osoba:",
+    #     f"slovo_k_editaci: >{form.slovo_k_editaci}<",
+    #     f"key_osoba: >{form.df_klice.get('key_osoba')}<",
+    #     f"value_osoba_raw: >{(form.slovo_k_editaci or {}).get(form.df_klice.get('key_osoba'))}<",
+    #     f"volby_osoba: >{form.volby_osoba}<",
+    # )
+
     form.df_value["value_osoba"] = int(
-        (form.slovo_k_editaci or {}).get(form.df_klice["key_osoba"], form.volby_osoba[0])
+        (form.slovo_k_editaci or {}).get(form.df_klice.get("key_osoba")) or form.volby_osoba[2]
     )
+
+    # st.write(f"value_osoba >{form.df_value['value_osoba']}<")
+
     # "prezent", přítomný, PPP, minulý...
     form.df_value["value_cas"] = (form.slovo_k_editaci or {}).get(
         form.df_klice["key_cas"], form.volby_cas[0]
@@ -1330,17 +1342,15 @@ def _form_tvar_verb_cas(col1, col2, col3) -> None:
             # u přítomného času a dalších je běžnější 3. os. sg.
             # [1, 2, 3]
             form.df_value["value_osoba"] = int(
-                (form.slovo_k_editaci or {}).get(
-                    form.df_klice["key_osoba"], str(form.volby_osoba[2])
-                )
+                (form.slovo_k_editaci or {}).get(form.df_klice.get("key_osoba"))
+                or form.volby_osoba[2]
             )
         else:
             # jinak 1. os. sg.
             # [1, 2, 3]
             form.df_value["value_osoba"] = int(
-                (form.slovo_k_editaci or {}).get(
-                    form.df_klice["key_osoba"], str(form.volby_osoba[0])
-                )
+                (form.slovo_k_editaci or {}).get(form.df_klice.get("key_osoba"))
+                or form.volby_osoba[0]
             )
 
     elif form.df_vybrane_slovo[form.df_klice["key_cas"]] in ss["casy_participa_pasiv_set"]:

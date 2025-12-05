@@ -1,7 +1,7 @@
 streamlit>=1.30
 pandas>=2.1
 numpy>=1.27
-indic-transliteration
+indic-transliteration>=2.3.2
+pyarrow>=15.0
 pillow
-pyarrow
 regex

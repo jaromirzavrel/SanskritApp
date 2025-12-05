@@ -244,12 +244,16 @@ def vloz_slovo_do_matice_vety():
     nove = ss["matice_nove_slovo"]
     index = ss["index_edit_word"]
     # index = ss.get('index_edit_word', None)
-    zobraz_toast(f"index {index}.", trvani=15)
-    zobraz_toast(f"ss[f_edit] {ss['f_edit']}.", trvani=15)
+    # zobraz_toast(f"0. ss[f_edit] = {ss['f_edit']}. Matice len = {len(ss['matice_vety'])}, index = {index}.", trvani=15, f_privileg=True)
+    # zobraz_toast(f"Matice len = {len(ss['matice_vety'])}", trvani=15, f_privileg=True)
+    # zobraz_toast(f"index = {index}.", trvani=15, f_privileg=True)
+    # zobraz_toast(f"ss[f_edit] = {ss['f_edit']}.", trvani=15, f_privileg=True)
 
-    if index is not None and index >= 0:
+    if index is not None and index >= 0 and index < len(ss["matice_vety"]):
         # EDITACE
         # Nahradí slovo na daném indexu
+        # st.sidebar.write("253 EDITACE index 1 =", index, "len =", len(ss['matice_vety']))
+        # zobraz_toast(f"1. ss[f_edit] = {ss['f_edit']}. Matice len = {len(ss['matice_vety'])}, index = {index}.", trvani=15, f_privileg=True)
         ss["matice_vety"][index] = nove
         # vrátit slovo na tvarování i = index slova ve větě
         # ss['index_edit_word'] = None
@@ -258,7 +262,9 @@ def vloz_slovo_do_matice_vety():
     else:
         # Nové slovo
         index = len(ss["matice_vety"])
+        # st.sidebar.write("262 Nové slovo index 2 =", index, "len =", len(ss['matice_vety']))
         # Vložení slova do věty
+        # zobraz_toast(f"2. ss[f_edit] = {ss['f_edit']}. Matice len = {len(ss['matice_vety'])}, index = {index}.", trvani=15, f_privileg=True)
         ss["matice_vety"].append(nove)
         # zobraz_toast(f"{index}. Slovo přidáno do věty.", trvani=5)
 

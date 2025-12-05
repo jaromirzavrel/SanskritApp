@@ -37,17 +37,34 @@ def zobraz_toast(
 
     ss = st.session_state
 
+    # Inicializace seznamu toastů, pokud ještě neexistuje
+    if "toasty" not in ss:
+        ss["toasty"] = []
+
+    # Přidání toastu do seznamu
     if not ss["cfg"]["f_zobraz_toast_privileg"] or (
         (ss["cfg"]["f_zobraz_toast_privileg"] and f_privileg)
         or ((ss["cfg"]["f_zobraz_toast_debug"] and ss["cfg"]["f_debug"] and f_debug))
     ):
-        if hasattr(st, "toast"):  # novější Streamlit
-            st.toast(text, icon=icon)
-        else:
-            placeholder = st.empty()
-            placeholder.success(text)
-            time.sleep(trvani)
-            placeholder.empty()
+
+        # Uložíme toast do session_state
+        ss["toasty"].append((text, icon, trvani))
+
+    # Zobrazíme toast
+    # Vykreslí všechny toasty ze session_state
+    # if False:  # vypnuto pro sekvenční zobrazení
+    if hasattr(st, "toast"):  # novější Streamlit
+        for t_text, t_icon, t_trvani in ss["toasty"]:
+            st.toast(t_text, icon=t_icon)
+    else:
+        placeholder = st.empty()
+        for t_text, t_icon, t_trvani in ss["toasty"]:
+            placeholder.success(f"{t_icon} {t_text}")
+            time.sleep(t_trvani)
+        placeholder.empty()
+
+    # Po vykreslení můžeme vymazat seznam, pokud nechceš, aby se opakovaly
+    ss["toasty"].clear()
 
 
 def dump_state(label="Stav", side=False):

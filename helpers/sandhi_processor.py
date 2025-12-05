@@ -14,6 +14,7 @@
 
 # import
 import logging
+import sys
 
 # import pytest
 import json
@@ -27,6 +28,8 @@ from typing import List, Dict, Optional
 # from helpers.utils import urci_koncovku
 from helpers.ui_display import zobraz_toast
 
+sys.dont_write_bytecode = True  # zakázat .pyc soubory
+
 json_file = "data/sandhi_pravidla.json"
 
 
@@ -38,6 +41,13 @@ class SandhiContext:
     # Index (pozice v seznamu slov)
     index_slovo: int = -1  # index pro slova ve větě
     index_vzor: int = None  # index pro vzory/náhrady v pravidlech
+    index_out: int = 0  # index pro log výstupu z procedury
+    index_out_konci_na: int = 0  # index pro log výstupu z procedury _konci_na
+    index_out_zacina_na: int = 0  # index pro log výstupu z procedury _zacina_na
+    index_out_zpracuj_zacatek: int = 0  # index pro log výstupu z procedury _zpracuj_zacatek
+    index_out_zpracuj_zacatek_nahrada: int = (
+        0  # index pro log výstupu z procedury _zpracuj_zacatek_nahrada
+    )
 
     # Vstupy pro dané spojení
     prvni: str = ""
@@ -189,12 +199,24 @@ class SandhiProcessor:
 
         log_txt = f"""
         {nadpis}
-          pravidlo_typ             >{ctx.pravidlo.get('typ', '')}<
-          pravidlo_konec           >{ctx.pravidlo.get('konec', '')}<
-          pravidlo_zacatek         >{ctx.pravidlo.get('zacatek', '')}<
-          pravidlo_nahrada_konec   >{ctx.pravidlo.get('nahrada_konec', '')}<
-          pravidlo_nahrada_zacatek >{ctx.pravidlo.get('nahrada_zacatek', '')}<
-          pravidlo_podminky        >{ctx.pravidlo.get('podminky', '')}<
+          index_out                         >{ctx.index_out}<
+          index_out_konci_na                >{ctx.index_out_konci_na}<
+          index_out_zacina_na               >{ctx.index_out_zacina_na}<
+          index_out_zpracuj_zacatek         >{ctx.index_out_zpracuj_zacatek}<
+          index_out_zpracuj_zacatek_nahrada >{ctx.index_out_zpracuj_zacatek_nahrada}<
+          f_nalezeno_vzor_konec             >{ctx.f_nalezeno_vzor_konec}<
+          f_nalezeno_nahrada_konec          >{ctx.f_nalezeno_nahrada_konec}<
+          f_nalezeno_vzor_zacatek           >{ctx.f_nalezeno_vzor_zacatek}<
+          f_nalezeno_nahrada_zacatek        >{ctx.f_nalezeno_nahrada_zacatek}<
+          f_continue                        >{ctx.f_continue}<
+          prvni                             >{ctx.prvni}<
+          druhe                             >{ctx.druhe}<
+          pravidlo_typ                      >{ctx.pravidlo.get('typ', '')}<
+          pravidlo_konec                    >{ctx.pravidlo.get('konec', '')}<
+          pravidlo_nahrada_konec            >{ctx.pravidlo.get('nahrada_konec', '')}<
+          pravidlo_zacatek                  >{ctx.pravidlo.get('zacatek', '')}<
+          pravidlo_nahrada_zacatek          >{ctx.pravidlo.get('nahrada_zacatek', '')}<
+          pravidlo_podminky                 >{ctx.pravidlo.get('podminky', '')}<
         """
 
         if st.session_state["cfg"]["f_log"]:
@@ -206,10 +228,16 @@ class SandhiProcessor:
     # "a-"
     # "*samohlaska_vse-" ["k","kh","p","ph","f","ś","ṣ","s"]
     # ["a-","á-","u-","ú-","é-","ó-"]
-    def _zacina_na(self, slovo: str, vzor: str | list[str] | None) -> tuple[bool, str]:
+    def _zacina_na(
+        self,
+        ctx: SandhiContext,
+        slovo: str,
+        vzor: str | list[str] | None,
+    ) -> tuple[bool, str]:
         """Zjistí, zda slovo začíná na vzor nebo na začátek z pojmenované skupiny nebo seznamu (list)."""
 
         if not vzor:
+            ctx.index_out_zacina_na = 1
             return False, ""
 
         # Pokud je vzorek typu list
@@ -217,10 +245,12 @@ class SandhiProcessor:
 
             # Projde prvky seznamu (list) a volá samu sebe
             for v in sorted(vzor, key=len, reverse=True):
-                f_nalezeno, z = self._zacina_na(slovo, v)
+                f_nalezeno, z = self._zacina_na(ctx=ctx, slovo=slovo, vzor=v)
                 if f_nalezeno:
+                    ctx.index_out_zacina_na = 2
                     return True, z
 
+            ctx.index_out_zacina_na = 3
             return False, ""
 
         vzor = vzor.strip("-")
@@ -232,6 +262,7 @@ class SandhiProcessor:
             jmeno = vzor.strip("*-")
             # pokud skupina tohoto jména nexistuje návrat, jinak pokračovat
             if jmeno not in self.skupiny:
+                ctx.index_out_zacina_na = 4
                 return False, ""
 
             vzor_sorted = sorted(self.skupiny[jmeno], key=len, reverse=True)
@@ -241,12 +272,15 @@ class SandhiProcessor:
                 # a kontroluje jestli vzorek je na začátku slova
                 # u kterého najde shodu vrátí True = našel jsem, a hodnotu vzorku začátku
                 if slovo.startswith(vz):
+                    ctx.index_out_zacina_na = 5
                     return True, vz
             # nenajde-li žádný vhodný vzorek vrátí False = nenašel jsem, a prázdný řetězec""
+            ctx.index_out_zacina_na = 6
             return False, ""
         else:
             vz = vzor
             # kontroluje jestli je vzorek na začátku slova
+            ctx.index_out_zacina_na = 7
             return (True, vz) if slovo.startswith(vz) else (False, "")
 
     def _normalize_vzor(self, vzor: str | list[str] | None) -> list[str]:
@@ -288,7 +322,7 @@ class SandhiProcessor:
 
         return vzory
 
-    def _konci_na(
+    def _konci_na(  # noqa: C901
         self,
         ctx: SandhiContext,
         slovo: str | None = None,
@@ -329,21 +363,35 @@ class SandhiProcessor:
         # )
 
         # Vždy dostaneme list nebo None
-        vzory = self._normalize_vzor(vzor)
+        vzory = self._normalize_vzor(vzor=vzor)
 
         if not vzory:
+            ctx.index_out_konci_na = 1
             return False, "", None
 
         # 1. Skupina Náhrada podle indexu (slovo == "")
         # Když je f_dej_index_vzor a index a slovo == "" vrať hodnotu z pořadí → náhrada
         # (není oštřeno neplatnost indexu) (pro náhradu)
         # vrací odpovídající náhradu podle pořadí, indexu vzoru ze seznamu, list v pravidle
-        if ctx.f_dej_index_vzor and slovo == "" and ctx.index_vzor is not None:
-            try:
-                # vrací - nalezeno, vzor, idx (musí být ctx.f_dej_index_vzor True pro pravidlo, False pro skupinu)
-                return (True, vzory[ctx.index_vzor], None)
-            except IndexError:
-                return False, "", None
+        if slovo == "":
+            # Hledej podle pořadí
+            if ctx.f_dej_index_vzor:
+                if ctx.index_vzor is not None:
+                    try:
+                        # vrací - nalezeno, vzor, idx (musí být ctx.f_dej_index_vzor True pro pravidlo, False pro skupinu)
+                        ctx.index_out_konci_na = 2
+                        return (True, vzory[ctx.index_vzor], None)
+                    except IndexError:
+                        ctx.index_out_konci_na = 3
+                        return False, "", None
+            elif len(vzory) == 1:
+                try:
+                    # vrací - nalezeno, vzor, idx (musí být ctx.f_dej_index_vzor True pro pravidlo, False pro skupinu)
+                    ctx.index_out_konci_na = 4
+                    return (True, vzory[0], None)
+                except IndexError:
+                    ctx.index_out_konci_na = 5
+                    return False, "", None
 
         # 2. Normální režim – setřídit pokud netřeba zachovat pořadí
         # Když je dej index - netřídit
@@ -368,6 +416,7 @@ class SandhiProcessor:
                 # ctx.index_vzor = idx if ctx.f_dej_index_vzor else None
                 ctx.index_vzor = vzory.index(v) if ctx.f_dej_index_vzor else None
                 # vrací - nalezeno, vzor, idx (musí být ctx.f_dej_index_vzor True pro pravidlo, False pro skupinu)
+                ctx.index_out_konci_na = 6
                 return True, vz, ctx.index_vzor
             # idx = idx + 1
 
@@ -375,6 +424,7 @@ class SandhiProcessor:
 
         # když slovo nekončí na žádnou položku ze skupiny
         # vrací - nalezeno, vzor, idx (musí být ctx.f_dej_index_vzor True pro pravidlo, False pro skupinu)
+        ctx.index_out_konci_na = 7
         return False, "", None
 
     # ==============================================================================================================================================
@@ -405,6 +455,8 @@ class SandhiProcessor:
         # if konec_vzor in {None, ""}:
         if not konec_vzor:
             ctx.f_continue = True
+            # ctx.index_out = ctx.index_out + 1
+            ctx.index_out = 1
             return ctx
 
         # ========== 2. NAČTENÍ PODMÍNEK ==========
@@ -435,16 +487,21 @@ class SandhiProcessor:
         # nedostatečné ošetřuje jen konkrétní vzorek ne seznamy
         if not ctx.f_nalezeno_vzor_konec:
             ctx.f_continue = True
+            ctx.index_out = 2
             return ctx
 
-        if ctx.vzor_konec is None or isinstance(ctx.vzor_konec, str) and ctx.vzor_konec == "":
+        if ctx.vzor_konec is None or (isinstance(ctx.vzor_konec, str) and ctx.vzor_konec == ""):
             ctx.f_continue = True
+            ctx.index_out = 3
             return ctx
+
+        # 5. Nalezeno → pokračujeme na náhradu konce
+        ctx.f_continue = False
+        ctx.index_out = 4
 
         # Logging
         self._log_pravidlo(ctx=ctx, nadpis="Nalezen konec:")
 
-        # 5. Nalezeno → pokračujeme na náhradu konce
         return ctx
 
     def _zpracuj_konec_nahrada(self, ctx: SandhiContext) -> SandhiContext:
@@ -469,6 +526,7 @@ class SandhiProcessor:
         # if konec_nahr in {None, ""}:
         if not konec_nahr:
             ctx.f_continue = True
+            ctx.index_out = 5
             return ctx
 
         # "_" → ponechat původní konec (žádná změna, ale pravidlo pokračuje)
@@ -476,6 +534,7 @@ class SandhiProcessor:
             ctx.nahrada_konec = "_"
             ctx.f_nalezeno_nahrada_konec = True
             ctx.f_continue = False
+            ctx.index_out = 6
             return ctx
 
         # "x" → vypustit celý konec
@@ -483,6 +542,7 @@ class SandhiProcessor:
             ctx.nahrada_konec = ""
             ctx.f_nalezeno_nahrada_konec = True
             ctx.f_continue = False
+            ctx.index_out = 7
             return ctx
 
         # --- Normální výpočet (konci_na) ---
@@ -504,14 +564,17 @@ class SandhiProcessor:
         # Pokud náhrada nebyla nalezena → pravidlo se ukončí
         if not ctx.f_nalezeno_nahrada_konec:
             ctx.f_continue = True
+            ctx.index_out = 8
             return ctx
 
         if not ctx.nahrada_konec:
             ctx.f_continue = True
+            ctx.index_out = 9
             return ctx
 
         # Nalezeno, vracíme
         ctx.f_continue = False
+        ctx.index_out = 10
         return ctx
 
     def _zpracuj_zacatek(self, ctx: SandhiContext) -> SandhiContext:
@@ -534,37 +597,47 @@ class SandhiProcessor:
 
         if not zacatek_vzor:
             ctx.f_continue = True
+            ctx.index_out_zpracuj_zacatek = 1
             return ctx
 
         # --- 2. kontrola začátku ---
         # ========== 2. VYHLEDÁNÍ ZAČÁTKU ==========
         # Kontrola začátku druhého slova podle vzoru pravidla
-        ctx.f_nalezeno_vzor_zacatek, ctx.vzor_zacatek = self._zacina_na(ctx.druhe, zacatek_vzor)
+        ctx.f_nalezeno_vzor_zacatek, ctx.vzor_zacatek = self._zacina_na(
+            ctx=ctx, slovo=ctx.druhe, vzor=zacatek_vzor
+        )
 
         # 3. Nenalezeno → toto pravidlo se vynechá
         # pokdud začátek druhého slova není dle vzorku pravidla jde na další pravidlo, vzorek
         # jinak pokračuje v běhu na provedení náhrad vzorků sandhi
         if not ctx.f_nalezeno_vzor_zacatek:
 
+            ctx.f_continue = True
+            ctx.index_out_zpracuj_zacatek = 2
+
             # Logging
             self._log_pravidlo(ctx=ctx, nadpis="Nenalezen začátek:")
 
-            ctx.f_continue = True
             return ctx
 
         if not ctx.vzor_zacatek:
 
+            ctx.f_continue = True
+            ctx.index_out_zpracuj_zacatek = 3
+
             # Logging
             self._log_pravidlo(ctx=ctx, nadpis="Nenalezen vzor začátek:")
 
-            ctx.f_continue = True
             return ctx
+
+        # 4. Nalezeno → pokračujeme na náhradu začátku
+        ctx.f_continue = False
+        ctx.index_out_zpracuj_zacatek = 4
 
         # --- 3. LOG nalezeného začátku ---
         # Logging
         self._log_pravidlo(ctx=ctx, nadpis="Nalezen začátek:")
 
-        # 4. Nalezeno → pokračujeme na náhradu začátku
         return ctx
 
     def _zpracuj_zacatek_nahrada(self, ctx: SandhiContext) -> SandhiContext:
@@ -597,6 +670,7 @@ class SandhiProcessor:
         if not zacatek_nahr:
             # žádná náhrada začátku -> není to vhodné pravidlo
             ctx.f_continue = True
+            ctx.index_out_zpracuj_zacatek_nahrada = 1
             return ctx
 
         # spojení: pokud začíná + => bez mezery, jinak mezera
@@ -646,6 +720,7 @@ class SandhiProcessor:
                     # Ikdyž jsem slova nabral tak je nemusím vracet pokud je bez sandhi
                     if aktualni_pad == podm_ne_pad:
                         ctx.f_continue = True  # další slovo
+                        ctx.index_out_zpracuj_zacatek_nahrada = 2
                         return ctx
 
                 if podm_cislo and podm_cislo.startswith("!"):
@@ -654,6 +729,7 @@ class SandhiProcessor:
                     # Ikdyž jsem slova nabral tak je nemusím vracet pokud je bez sandhi
                     if aktualni_cislo == podm_ne_cislo:
                         ctx.f_continue = True  # další slovo
+                        ctx.index_out_zpracuj_zacatek_nahrada = 3
                         return ctx
         else:
             podm_cislo = ""
@@ -663,6 +739,7 @@ class SandhiProcessor:
         ctx.f_nalezeno_nahrada_zacatek = True
         ctx.f_continue = False
 
+        ctx.index_out_zpracuj_zacatek_nahrada = 4
         return ctx
 
     def _nahrada_nahrada(self, ctx: SandhiContext) -> SandhiContext:
@@ -738,11 +815,13 @@ class SandhiProcessor:
             ctx.slova[i + 1] = nove_druhe
 
         # Logging
-        log_txt = f"""
-        Za slovem:
-          f_nalezeno_vzor_konec    >{ctx.f_nalezeno_vzor_konec}<
-          f_nalezeno_vzor_zacatek  >{ctx.f_nalezeno_vzor_zacatek}<
-          nove_druhe               >{nove_druhe}<
+        # log_txt = f"""Za slovem:
+        #   f_nalezeno_vzor_konec    >{ctx.f_nalezeno_vzor_konec}<
+        #   f_nalezeno_vzor_zacatek  >{ctx.f_nalezeno_vzor_zacatek}<
+        #   nove_druhe               >{nove_druhe}<
+        # """
+        log_txt = f"""Za slovem:
+          nove_druhe                  >{nove_druhe}<
         """
         self._log_pravidlo(ctx=ctx, nadpis=log_txt)
 
@@ -838,6 +917,7 @@ class SandhiProcessor:
                 # --- KONEC ---
                 # Zpracování konce prvního slova
                 ctx = self._zpracuj_konec(ctx)
+                self._log_pravidlo(ctx=ctx, nadpis="Po _zpracuj_konec:")
 
                 if ctx.f_continue:
                     continue  # další pravidlo
@@ -856,6 +936,7 @@ class SandhiProcessor:
                     # --- náhrada konce ---
                     # Zpracování náhrady konce
                     ctx = self._zpracuj_konec_nahrada(ctx)
+                    self._log_pravidlo(ctx=ctx, nadpis="Po _zpracuj_konec_nahrada:")
 
                     if ctx.f_continue:
                         continue  # další pravidlo
@@ -863,6 +944,7 @@ class SandhiProcessor:
                     # --- začátek ---
                     # Zpracování začátku druhého slova
                     ctx = self._zpracuj_zacatek(ctx)
+                    self._log_pravidlo(ctx=ctx, nadpis="Po _zpracuj_zacatek:")
 
                     if ctx.f_continue:
                         continue  # další pravidlo
@@ -870,6 +952,7 @@ class SandhiProcessor:
                     # --- náhrada začátku ---
                     # Náhrada začátku
                     ctx = self._zpracuj_zacatek_nahrada(ctx)
+                    self._log_pravidlo(ctx=ctx, nadpis="Po _zpracuj_zacatek_nahrada:")
 
                     if ctx.f_continue:
                         continue  # další pravidlo
@@ -878,6 +961,7 @@ class SandhiProcessor:
                     # Pokud obě strany mají nalezené vzory, a náhrady proveď vlastní náhradu
                     # (metoda _nahrada_nahrada by měla upravit ctx.slovo a ctx.druhe, doplnit ctx.zmeny a nastavit ctx.f_break = True)
                     ctx = self._nahrada_nahrada(ctx)
+                    self._log_pravidlo(ctx=ctx, nadpis="Po _nahrada_nahrada:")
 
                     # po úspěšné náhradě přerušujeme hledání dalších pravidel pro tuto dvojici
                     if ctx.f_break:
@@ -912,6 +996,7 @@ class SandhiProcessor:
             # Konec smyčky přes pravidla pro tuto dvojici
             # Provést závěrečné zpracování/report (volitelně)
             self.zaver_1(ctx)
+            self._log_pravidlo(ctx=ctx, nadpis="Po zaver_1:")
 
         # End for slova
         # Chybí zpracování podmínek - pád, číslo - nutno předat i větu s parametry slov
@@ -921,6 +1006,7 @@ class SandhiProcessor:
         # 6. Celkový závěr
         # Konec hlavní smyčky přes dvojice
         self.zaver_2(ctx)
+        self._log_pravidlo(ctx=ctx, nadpis="Po zaver_2:")
 
         # 7. Výsledná věta
         # Spojení všech ne-prázdných tokenů (pozor: ctx.druhe může již obsahovat počáteční mezeru/spojení)
